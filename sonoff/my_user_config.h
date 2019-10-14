@@ -309,23 +309,23 @@
 
 // -- Optional modules ----------------------------
 #define USE_BUZZER                               // Add support for a buzzer (+0k6 code)
-#define USE_SONOFF_IFAN                          // Add support for Sonoff iFan02 and iFan03 (+2k code)
-#define USE_TUYA_MCU                             // Add support for Tuya Serial MCU
+//#define USE_SONOFF_IFAN                          // Add support for Sonoff iFan02 and iFan03 (+2k code)
+//#define USE_TUYA_MCU                             // Add support for Tuya Serial MCU
   #define TUYA_DIMMER_ID       0                 // Default dimmer Id
-#define USE_ARMTRONIX_DIMMERS                    // Add support for Armtronix Dimmers (+1k4 code)
-#define USE_PS_16_DZ                             // Add support for PS-16-DZ Dimmer and Sonoff L1 (+2k code)
+//#define USE_ARMTRONIX_DIMMERS                    // Add support for Armtronix Dimmers (+1k4 code)
+//#define USE_PS_16_DZ                             // Add support for PS-16-DZ Dimmer and Sonoff L1 (+2k code)
 //#define ROTARY_V1                                // Add support for MI Desk Lamp
 //#define USE_SHUTTER                              // Add Shutter support for up to 4 shutter with different motortypes (+6k code)
 //#define USE_DEEPSLEEP                            // Add support for deepsleep (+1k code)
 
 // -- Optional light modules ----------------------
-#define USE_WS2812                               // WS2812 Led string using library NeoPixelBus (+5k code, +1k mem, 232 iram) - Disable by //
+//#define USE_WS2812                               // WS2812 Led string using library NeoPixelBus (+5k code, +1k mem, 232 iram) - Disable by //
 //  #define USE_WS2812_DMA                         // DMA supports only GPIO03 (= Serial RXD) (+1k mem). When USE_WS2812_DMA is enabled expect Exceptions on Pow
   #define USE_WS2812_HARDWARE  NEO_HW_WS2812     // Hardware type (NEO_HW_WS2812, NEO_HW_WS2812X, NEO_HW_WS2813, NEO_HW_SK6812, NEO_HW_LC8812, NEO_HW_APA106)
   #define USE_WS2812_CTYPE     NEO_GRB           // Color type (NEO_RGB, NEO_GRB, NEO_BRG, NEO_RBG, NEO_RGBW, NEO_GRBW)
-#define USE_MY92X1                               // Add support for MY92X1 RGBCW led controller as used in Sonoff B1, Ailight and Lohas
-#define USE_SM16716                              // Add support for SM16716 RGB LED controller (+0k7 code)
-#define USE_SM2135                               // Add support for SM2135 RGBCW led control as used in Action LSC (+0k6 code)
+//#define USE_MY92X1                               // Add support for MY92X1 RGBCW led controller as used in Sonoff B1, Ailight and Lohas
+//#define USE_SM16716                              // Add support for SM16716 RGB LED controller (+0k7 code)
+//#define USE_SM2135                               // Add support for SM2135 RGBCW led control as used in Action LSC (+0k6 code)
 
 // -- Counter input -------------------------------
 #define USE_COUNTER                              // Enable inputs as counter (+0k8 code)
@@ -334,12 +334,12 @@
 //#define USE_ADC_VCC                              // Display Vcc in Power status. Disable for use as Analog input on selected devices
 
 // -- One wire sensors ----------------------------
-#define USE_DS18x20                              // Optional for more than one DS18x20 sensors with id sort, single scan and read retry (+1k3 code)
+//#define USE_DS18x20                              // Optional for more than one DS18x20 sensors with id sort, single scan and read retry (+1k3 code)
 //  #define W1_PARASITE_POWER                      // Optimize for parasite powered sensors
 //  #define DS18B20_INTERNAL_PULLUP                // Use INPUT_PULLUP internal pullup resistor
 
 // -- I2C sensors ---------------------------------
-#define USE_I2C                                  // I2C using library wire (+10k code, 0k2 mem, 124 iram)
+//#define USE_I2C                                  // I2C using library wire (+10k code, 0k2 mem, 124 iram)
 
 #ifdef USE_I2C
   #define USE_SHT                                // Enable SHT1X sensor (+1k4 code)
@@ -418,12 +418,12 @@
 #endif  // USE_SPI
 
 // -- Serial sensors ------------------------------
-#define USE_MHZ19                                // Add support for MH-Z19 CO2 sensor (+2k code)
-#define USE_SENSEAIR                             // Add support for SenseAir K30, K70 and S8 CO2 sensor (+2k3 code)
+//#define USE_MHZ19                                // Add support for MH-Z19 CO2 sensor (+2k code)
+//#define USE_SENSEAIR                             // Add support for SenseAir K30, K70 and S8 CO2 sensor (+2k3 code)
   #define CO2_LOW              800               // Below this CO2 value show green light (needs PWM or WS2812 RG(B) led and enable with SetOption18 1)
   #define CO2_HIGH             1200              // Above this CO2 value show red light (needs PWM or WS2812 RG(B) led and enable with SetOption18 1)
-#define USE_PMS5003                              // Add support for PMS5003 and PMS7003 particle concentration sensor (+1k3 code)
-#define USE_NOVA_SDS                             // Add support for SDS011 and SDS021 particle concentration sensor (+0k7 code)
+//#define USE_PMS5003                              // Add support for PMS5003 and PMS7003 particle concentration sensor (+1k3 code)
+//#define USE_NOVA_SDS                             // Add support for SDS011 and SDS021 particle concentration sensor (+0k7 code)
   #define WORKING_PERIOD       5                 // Working period of the SDS Sensor, Takes a reading every X Minutes
 #define USE_SERIAL_BRIDGE                        // Add support for software Serial Bridge (+0k8 code)
 //#define USE_MP3_PLAYER                           // Use of the DFPlayer Mini MP3 Player RB-DFR-562 commands: play, volume and stop
@@ -437,12 +437,12 @@
 //#define USE_IBEACON                              // Add support for bluetooth LE passive scan of ibeacon devices (uses HM17 module)
 
 // Power monitoring sensors -----------------------
-#define USE_ENERGY_MARGIN_DETECTION              // Add support for Energy Margin detection (+1k6 code)
+//#define USE_ENERGY_MARGIN_DETECTION              // Add support for Energy Margin detection (+1k6 code)
   #define USE_ENERGY_POWER_LIMIT                 // Add additional support for Energy Power Limit detection (+1k2 code)
-#define USE_PZEM004T                             // Add support for PZEM004T Energy monitor (+2k code)
-#define USE_PZEM_AC                              // Add support for PZEM014,016 Energy monitor (+1k1 code)
-#define USE_PZEM_DC                              // Add support for PZEM003,017 Energy monitor (+1k1 code)
-#define USE_MCP39F501                            // Add support for MCP39F501 Energy monitor as used in Shelly 2 (+3k1 code)
+//#define USE_PZEM004T                             // Add support for PZEM004T Energy monitor (+2k code)
+//#define USE_PZEM_AC                              // Add support for PZEM014,016 Energy monitor (+1k1 code)
+//#define USE_PZEM_DC                              // Add support for PZEM003,017 Energy monitor (+1k1 code)
+//#define USE_MCP39F501                            // Add support for MCP39F501 Energy monitor as used in Shelly 2 (+3k1 code)
 //#define USE_SDM120_2                             // Add support for Eastron SDM120-Modbus energy monitor (+1k1 code)
   #define SDM120_SPEED         2400              // SDM120-Modbus RS485 serial speed (default: 2400 baud)
 //#define USE_SDM630_2                             // Add support for Eastron SDM630-Modbus energy monitor (+0k6 code)
@@ -462,7 +462,7 @@
   #define SOLAXX1_PV2                            // Solax X1 using second PV
 
 // -- Low level interface devices -----------------
-#define USE_DHT                                  // Add support for DHT11, AM2301 (DHT21, DHT22, AM2302, AM2321) and SI7021 Temperature and Humidity sensor (1k6 code)
+//#define USE_DHT                                  // Add support for DHT11, AM2301 (DHT21, DHT22, AM2302, AM2321) and SI7021 Temperature and Humidity sensor (1k6 code)
 
 //#define USE_MAX31855                             // Add support for MAX31855 K-Type thermocouple sensor using softSPI
 //#define USE_MAX31865                             // Add support for MAX31865 RTD sensors using softSPI
@@ -482,7 +482,7 @@
 // You can reduce this size by disabling some protocols in "lib/IRremoteESP8266.x.x.x/src/IRremoteESP8266.h"
 
 // -- IR Remote features - subset of IR protocols --------------------------
-#define USE_IR_REMOTE                            // Send IR remote commands using library IRremoteESP8266 and ArduinoJson (+4k3 code, 0k3 mem, 48 iram)
+//#define USE_IR_REMOTE                            // Send IR remote commands using library IRremoteESP8266 and ArduinoJson (+4k3 code, 0k3 mem, 48 iram)
 //  #define USE_IR_SEND_AIWA                       // Support IRsend Aiwa protocol
   #define USE_IR_SEND_DISH                       // Support IRsend Dish protocol
   #define USE_IR_SEND_JVC                        // Support IRsend JVC protocol
@@ -522,12 +522,12 @@
 
 // ------------------------------------------------
 
-#define USE_ARILUX_RF                            // Add support for Arilux RF remote controller (+0k8 code, 252 iram (non 2.3.0))
+//#define USE_ARILUX_RF                            // Add support for Arilux RF remote controller (+0k8 code, 252 iram (non 2.3.0))
 
-#define USE_SR04                                 // Add support for HC-SR04 ultrasonic devices (+1k code)
+//#define USE_SR04                                 // Add support for HC-SR04 ultrasonic devices (+1k code)
 
 //#define USE_TM1638                               // Add support for TM1638 switches copying Switch1 .. Switch8 (+1k code)
-#define USE_HX711                                // Add support for HX711 load cell (+1k5 code)
+//#define USE_HX711                                // Add support for HX711 load cell (+1k5 code)
 //  #define USE_HX711_GUI                          // Add optional web GUI to HX711 as scale (+1k8 code)
 
 #define USE_RF_FLASH                             // Add support for flashing the EFM8BB1 chip on the Sonoff RF Bridge. C2CK must be connected to GPIO4, C2D to GPIO5 on the PCB (+3k code)
@@ -543,7 +543,7 @@
 //#define USE_HRE                                  // Add support for Badger HR-E Water Meter (+1k4 code)
 //#define USE_A4988_Stepper                        // Add support for A4988 stepper-motor-driver-circuit (+10k5 code)
 
-//#define USE_EXS_DIMMER                           // Add support for ES-Store WiFi Dimmer
+#define USE_EXS_DIMMER                           // Add support for ES-Store WiFi Dimmer
 
 /*********************************************************************************************\
  * Debug features
