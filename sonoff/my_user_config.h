@@ -543,6 +543,8 @@
 //#define USE_HRE                                  // Add support for Badger HR-E Water Meter (+1k4 code)
 //#define USE_A4988_Stepper                        // Add support for A4988 stepper-motor-driver-circuit (+10k5 code)
 
+//#define USE_EXS_DIMMER                           // Add support for ES-Store WiFi Dimmer
+
 /*********************************************************************************************\
  * Debug features
 \*********************************************************************************************/

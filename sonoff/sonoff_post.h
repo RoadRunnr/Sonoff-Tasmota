@@ -191,6 +191,7 @@ char* ToHex_P(const unsigned char * in, size_t insz, char * out, size_t outsz, c
 #define USE_SM16716                           // Add support for SM16716 RGB LED controller (+0k7 code)
 #define USE_HRE                               // Add support for Badger HR-E Water Meter (+1k4 code)
 //#define USE_SOLAX_X1                          // Add support for Solax X1 series Modbus log info (+4k1 code)
+#define USE_EXS_DIMMER                         // Add support for ES-Store WiFi Dimmer
 #endif  // FIRMWARE_SENSORS
 
 /*********************************************************************************************\
@@ -269,6 +270,7 @@ char* ToHex_P(const unsigned char * in, size_t insz, char * out, size_t outsz, c
 #undef USE_SM16716                            // Disable support for SM16716 RGB LED controller (+0k7 code)
 #undef USE_HRE                                // Disable support for Badger HR-E Water Meter (+1k4 code)
 #undef USE_A4988_Stepper                      // Disable support for A4988_Stepper
+#undef USE_EXS_DIMMER                         // Disable support for ES-Store WiFi Dimmer
 #undef DEBUG_THEO                             // Disable debug code
 #undef USE_DEBUG_DRIVER                       // Disable debug code
 #endif  // FIRMWARE_CLASSIC
@@ -407,6 +409,7 @@ char* ToHex_P(const unsigned char * in, size_t insz, char * out, size_t outsz, c
 #undef USE_SM16716                            // Disable support for SM16716 RGB LED controller (+0k7 code)
 #undef USE_HRE                                // Disable support for Badger HR-E Water Meter (+1k4 code)
 #undef USE_A4988_Stepper                      // Disable support for A4988_Stepper
+#undef USE_EXS_DIMMER                         // Disable support for ES-Store WiFi Dimmer
 #undef DEBUG_THEO                             // Disable debug code
 #undef USE_DEBUG_DRIVER                       // Disable debug code
 
@@ -505,6 +508,7 @@ char* ToHex_P(const unsigned char * in, size_t insz, char * out, size_t outsz, c
 #undef USE_SM16716                            // Disable support for SM16716 RGB LED controller (+0k7 code)
 #undef USE_HRE                                // Disable support for Badger HR-E Water Meter (+1k4 code)
 #undef USE_A4988_Stepper                      // Disable support for A4988_Stepper
+#undef USE_EXS_DIMMER                         // Disable support for ES-Store WiFi Dimmer
 #undef DEBUG_THEO                             // Disable debug code
 #undef USE_DEBUG_DRIVER                       // Disable debug code
 #endif  // FIRMWARE_BASIC
@@ -590,6 +594,7 @@ char* ToHex_P(const unsigned char * in, size_t insz, char * out, size_t outsz, c
 #undef USE_SM16716                            // Disable support for SM16716 RGB LED controller (+0k7 code)
 #undef USE_HRE                                // Disable support for Badger HR-E Water Meter (+1k4 code)
 #undef USE_A4988_Stepper                      // Disable support for A4988_Stepper
+#undef USE_EXS_DIMMER                         // Disable support for ES-Store WiFi Dimmer
 #undef DEBUG_THEO                             // Disable debug code
 #undef USE_DEBUG_DRIVER                       // Disable debug code
 #endif  // FIRMWARE_MINIMAL

@@ -465,8 +465,10 @@ void GetFeatures(void)
 #ifdef USE_DEEPSLEEP
   feature5 |= 0x00000800;  // Xdrv_029_deepsleep.ino
 #endif
+#if defined(USE_LIGHT) && defined(USE_EXS_DIMMER)
+  feature5 |= 0x00001000;  // xdrv_30_exsdimmer.ino
+#endif
 
-//  feature5 |= 0x00001000;
 //  feature5 |= 0x00002000;
 //  feature5 |= 0x00004000;
 //  feature5 |= 0x00008000;
